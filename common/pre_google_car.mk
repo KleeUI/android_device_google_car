@@ -28,8 +28,10 @@ PRODUCT_ENFORCE_RRO_TARGETS :=
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 # All components inherited here go to system image
-#
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+# Skip this for 64 bit only devices
+ifneq ($(DEVICE_IS_64BIT_ONLY),true)
+    $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+endif
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 
 #
