@@ -49,6 +49,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Phone car targets don't support ramdump
 EXCLUDE_BUILD_RAMDUMP_UPLOADER_DEBUG_TOOL := true
 
+# Disable RCS and EAB for phone car targets
+PRODUCT_PRODUCT_PROPERTIES += \
+        persist.rcs.supported=0 \
+        persist.eab.supported=0
+
 # Explicitly disable support for some Bluetooth profiles included in base phone builds
 PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.asha.central.enabled=false \
