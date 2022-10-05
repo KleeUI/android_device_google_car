@@ -64,9 +64,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += device/google_car/common/overlay
 
-# Enable landscape
-PRODUCT_COPY_FILES += \
+ifneq ($(PORTRAIT_UI), true)
+        # Enable landscape
+        PRODUCT_COPY_FILES += \
             frameworks/native/data/etc/android.hardware.screen.landscape.xml:system/etc/permissions/android.hardware.screen.landscape.xml
+endif
 
 
 TARGET_USES_CAR_FUTURE_FEATURES := true
