@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Android Open-Source Project
+# Copyright 2022 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,13 @@
 # limitations under the License.
 #
 
-# Contents of this file were copied from device/google/raviole/raven/BoardConfig.mk,
-# except for:
-#
-# * TARGET_SCREEN_DENSITY is scaled down by 1.75x
+$(call inherit-product, device/google_car/common/pre_google_car.mk)
+$(call inherit-product, device/google_car/bluejay_car/device-bluejay-car.mk)
+$(call inherit-product-if-exists, vendor/google_devices/raviole/proprietary/raven/device-vendor-bluejay.mk)
+$(call inherit-product, device/google_car/common/post_google_car.mk)
 
-TARGET_SCREEN_DENSITY := 240
+PRODUCT_MANUFACTURER := Google
+PRODUCT_BRAND := Android
+PRODUCT_NAME := aosp_bluejay_car
+PRODUCT_DEVICE := bluejay
+PRODUCT_MODEL := AOSP on bluejay
