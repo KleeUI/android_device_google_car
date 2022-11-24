@@ -18,6 +18,9 @@
 #### This file should be included at the top of the aosp_PHONE_car.mk file
 ####
 
+# CarServiceHelperService accesses the hidden api in the system server.
+SYSTEM_OPTIMIZE_JAVA := false
+
 DEVICE_FRAMEWORK_MANIFEST_FILE += device/google_car/common/manifest.xml
 
 # generic_system.mk sets 'PRODUCT_ENFORCE_RRO_TARGETS := *'
