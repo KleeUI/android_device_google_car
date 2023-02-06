@@ -30,6 +30,10 @@ PRODUCT_ENFORCE_RRO_TARGETS :=
 # Enable mainline checking
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
+# Set Car Service RRO
+PRODUCT_PACKAGES += CarServiceOverlayPhoneCar
+GOOGLE_CAR_SERVICE_OVERLAY += CarServiceOverlayPhoneCarGoogle
+
 # All components inherited here go to system image
 # Skip this for 64 bit only devices
 ifneq ($(DEVICE_IS_64BIT_ONLY),true)
