@@ -24,7 +24,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/panther_car/aosp_panther_car.mk \
     $(LOCAL_DIR)/raven_car/aosp_raven_car.mk \
     $(LOCAL_DIR)/redfin_car/aosp_redfin_car.mk \
-    $(LOCAL_DIR)/sunfish_car/aosp_sunfish_car.mk
+    $(LOCAL_DIR)/sunfish_car/aosp_sunfish_car.mk \
+    $(LOCAL_DIR)/tangorpro_car/aosp_tangorpro_car.mk
 
 
 COMMON_LUNCH_CHOICES := \
