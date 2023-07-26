@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
         log.tag.CarTrustAgentUnlockEvent=I
 
 # Phone car targets don't support ramdump
-EXCLUDE_BUILD_RAMDUMP_UPLOADER_DEBUG_TOOL := true
+PRODUCT_PACKAGES += \
+    ExcludeRamdumpUploader
 
 # Disable RCS and EAB for phone car targets
 PRODUCT_PRODUCT_PROPERTIES += \
