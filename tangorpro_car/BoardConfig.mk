@@ -1,5 +1,5 @@
 #
-# Copyright 2021 The Android Open Source Project
+# Copyright (C) 2023 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,6 @@
 # limitations under the License.
 #
 
-AUTOMOTIVE_PRODUCT_PATH := google_car/raven_car
+# * TARGET_SCREEN_DENSITY is scaled down by 1.6x
 
-$(call inherit-product, packages/services/Car/car_product/build/car.mk)
-
-$(call inherit-product, device/google/raviole/device-raven.mk)
-
-include device/google/gs101/uwb/uwb.mk
-
-PRODUCT_PRODUCT_PROPERTIES+= \
-    ro.adb.secure=0
+TARGET_SCREEN_DENSITY := 200
