@@ -38,4 +38,5 @@ COMMON_LUNCH_CHOICES := \
     aosp_panther_car-userdebug \
     aosp_raven_car-userdebug \
     aosp_redfin_car-userdebug \
-    aosp_sunfish_car-userdebug
+    aosp_sunfish_car-userdebug \
+    aosp_tangorpro_car-userdebug
