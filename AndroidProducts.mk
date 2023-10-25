@@ -27,12 +27,12 @@ PRODUCT_MAKEFILES := \
 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_bluejay_car-userdebug \
-    aosp_bramble_car-userdebug \
-    aosp_cheetah_car-userdebug \
-    aosp_oriole_car-userdebug \
-    aosp_panther_car-userdebug \
-    aosp_raven_car-userdebug \
-    aosp_redfin_car-userdebug \
-    aosp_sunfish_car-userdebug \
-    aosp_tangorpro_car-userdebug
+    aosp_bluejay_car-trunk_staging-userdebug \
+    aosp_bramble_car-trunk_staging-userdebug \
+    aosp_cheetah_car-trunk_staging-userdebug \
+    aosp_oriole_car-trunk_staging-userdebug \
+    aosp_panther_car-trunk_staging-userdebug \
+    aosp_raven_car-trunk_staging-userdebug \
+    aosp_redfin_car-trunk_staging-userdebug \
+    aosp_sunfish_car-trunk_staging-userdebug \
+    aosp_tangorpro_car-trunk_staging-userdebug
