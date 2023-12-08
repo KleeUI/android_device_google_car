@@ -17,10 +17,11 @@
 DEVICE_IS_64BIT_ONLY := true
 
 
+PRODUCT_PACKAGE_OVERLAYS += device/google_car/tangorpro_car/overlay
+
 $(call inherit-product, device/google_car/common/pre_google_car.mk)
 $(call inherit-product, device/google_car/tangorpro_car/device-tangorpro-car.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
-
 
 PRODUCT_NAME := aosp_tangorpro_car
 PRODUCT_DEVICE := tangorpro
