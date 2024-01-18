@@ -53,9 +53,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 
 # Auto modules
-PRODUCT_PACKAGES += \
-            android.hardware.broadcastradio@2.0-service \
-            android.hardware.automotive.vehicle@2.0-default-service
+
+ifneq ($(PIXEL_2023_GEN),)
+    PRODUCT_PACKAGES += \
+        android.hardware.broadcastradio \
+        android.hardware.automotive.vehicle@V3-default-service
+else
+    PRODUCT_PACKAGES += \
+        android.hardware.broadcastradio@2.0-service \
+        android.hardware.automotive.vehicle@2.0-default-service
+endif
 
 # Additional selinux policy
 BOARD_SEPOLICY_DIRS += device/google_car/common/sepolicy
