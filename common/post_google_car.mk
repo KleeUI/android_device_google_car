@@ -61,7 +61,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
         persist.eab.supported=0
 
 # Explicitly disable support for some Bluetooth profiles included in base phone builds
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.asha.central.enabled=false \
         bluetooth.profile.a2dp.source.enabled=false \
         bluetooth.profile.avrcp.target.enabled=false \
