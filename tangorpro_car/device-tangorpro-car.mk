@@ -22,6 +22,7 @@ $(call inherit-product, device/google/tangorpro/device-tangorpro.mk)
 
 #include device/google/gs101/uwb/uwb.mk
 
+PRODUCT_PACKAGES += com.google.android.cellbroadcast
 PRODUCT_PRODUCT_PROPERTIES+= \
     ro.oem.key1=AAE00GOOG00TANGORPRO
 
