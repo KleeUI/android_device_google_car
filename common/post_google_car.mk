@@ -63,8 +63,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Explicitly disable support for some Bluetooth profiles included in base phone builds
 PRODUCT_PROPERTY_OVERRIDES += \
         bluetooth.profile.asha.central.enabled=false \
-        bluetooth.profile.a2dp.source.enabled=false \
-        bluetooth.profile.avrcp.target.enabled=false \
         bluetooth.profile.bap.broadcast.assist.enabled=false \
         bluetooth.profile.bap.unicast.client.enabled=false \
         bluetooth.profile.bas.client.enabled=false \
