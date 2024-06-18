@@ -18,7 +18,7 @@ AUTOMOTIVE_PRODUCT_PATH := google_car/raven_car
 
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
 
-$(call inherit-product, device/google/raviole/device-raven.mk)
+$(call inherit-product, device/google/raviole/raven_generic.mk)
 
 include device/google/gs101/uwb/uwb.mk
 

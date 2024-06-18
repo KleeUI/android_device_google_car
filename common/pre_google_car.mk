@@ -31,7 +31,7 @@ PRODUCT_ENFORCE_RRO_TARGETS :=
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 # Set Car Service RRO
-PRODUCT_PACKAGES += CarServiceOverlayPhoneCar
+PRODUCT_PACKAGES += CarServiceOverlayPhoneCar \
 GOOGLE_CAR_SERVICE_OVERLAY += CarServiceOverlayPhoneCarGoogle
 
 # All components inherited here go to system image
@@ -63,6 +63,9 @@ else
         android.hardware.broadcastradio@2.0-service \
         android.hardware.automotive.vehicle@2.0-default-service
 endif
+
+# Set Car Wifi RRO to properly configure the system for AAP
+PRODUCT_PACKAGES += CarWifiOverlay
 
 # Additional selinux policy
 BOARD_SEPOLICY_DIRS += device/google_car/common/sepolicy

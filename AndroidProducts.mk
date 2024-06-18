@@ -16,7 +16,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bluejay_car/aosp_bluejay_car.mk \
-    $(LOCAL_DIR)/bramble_car/aosp_bramble_car.mk \
     $(LOCAL_DIR)/cheetah_car/aosp_cheetah_car.mk \
     $(LOCAL_DIR)/oriole_car/aosp_oriole_car.mk \
     $(LOCAL_DIR)/panther_car/aosp_panther_car.mk \
@@ -28,7 +27,6 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     aosp_bluejay_car-trunk_staging-userdebug \
-    aosp_bramble_car-trunk_staging-userdebug \
     aosp_cheetah_car-trunk_staging-userdebug \
     aosp_oriole_car-trunk_staging-userdebug \
     aosp_panther_car-trunk_staging-userdebug \
