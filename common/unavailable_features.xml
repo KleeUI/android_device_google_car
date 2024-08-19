@@ -15,6 +15,25 @@
 -->
 
 <permissions>
-    <!-- No Managed users feature -->
+    <unavailable-feature name="android.hardware.camera.capability.manual_post_processing" />
+    <unavailable-feature name="android.hardware.camera.capability.manual_sensor" />
+    <unavailable-feature name="android.hardware.camera.capability.raw" />
+    <unavailable-feature name="android.hardware.camera.concurrent" />
+    <unavailable-feature name="android.hardware.camera.level.full" />
+    <unavailable-feature name="android.hardware.fingerprint" />
+    <unavailable-feature name="android.hardware.location.network" />
+    <unavailable-feature name="android.hardware.sensor.stepcounter" />
+    <unavailable-feature name="android.hardware.sensor.stepdetector" />
+    <unavailable-feature name="android.hardware.telephony" />
+    <unavailable-feature name="android.hardware.telephony.calling" />
+    <unavailable-feature name="android.hardware.telephony.cdma" />
+    <unavailable-feature name="android.hardware.telephony.data" />
+    <unavailable-feature name="android.hardware.telephony.gsm" />
+    <unavailable-feature name="android.hardware.telephony.messaging" />
+    <unavailable-feature name="android.hardware.telephony.radio.access" />
+    <unavailable-feature name="android.hardware.telephony.subscription" />
+    <unavailable-feature name="android.software.app_widgets" />
+    <unavailable-feature name="android.software.backup" />
     <unavailable-feature name="android.software.managed_users" />
+    <unavailable-feature name="android.software.print" />
 </permissions>
