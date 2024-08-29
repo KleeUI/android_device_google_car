@@ -110,6 +110,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         device/google_car/common/unavailable_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavailable_features.xml
 
+ifneq ($(PORTRAIT_UI), true)
+PRODUCT_COPY_FILES += \
+        device/google_car/common/unavailable_features_landscape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavailable_features_landscape.xml
+endif
+
 # broadcast radio feature
  PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.broadcastradio.xml:system/etc/permissions/android.hardware.broadcastradio.xml
