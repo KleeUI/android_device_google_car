@@ -18,7 +18,6 @@
     <unavailable-feature name="android.hardware.camera.capability.manual_post_processing" />
     <unavailable-feature name="android.hardware.camera.capability.manual_sensor" />
     <unavailable-feature name="android.hardware.camera.capability.raw" />
-    <unavailable-feature name="android.hardware.camera.concurrent" />
     <unavailable-feature name="android.hardware.camera.level.full" />
     <unavailable-feature name="android.hardware.context_hub" />
     <unavailable-feature name="android.hardware.fingerprint" />
