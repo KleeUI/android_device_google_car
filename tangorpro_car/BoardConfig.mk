@@ -15,7 +15,7 @@
 #
 
 # Adjust the TARGET_SCREEN_DENSITY based on the target name
-ifeq (,$(findstring tangorpro_ui_portrait_car, $(TARGET_PRODUCT)))
+ifeq (,$(filter tangorpro_ui_portrait_car tangorpro_car_cw, $(TARGET_PRODUCT)))
     TARGET_SCREEN_DENSITY := 280
 else
     TARGET_SCREEN_DENSITY := 150
