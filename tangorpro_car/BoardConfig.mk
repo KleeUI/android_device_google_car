@@ -20,3 +20,6 @@ ifeq (,$(filter tangorpro_ui_portrait_car tangorpro_car_cw, $(TARGET_PRODUCT)))
 else
     TARGET_SCREEN_DENSITY := 150
 endif
+
+# Wifi interface combination - {1 STA + 1 P2P} or {1 STA + 1 NAN} or {1 STA + 1 AP}
+WIFI_HAL_INTERFACE_COMBINATIONS := {{{STA}, 1}, {{P2P, NAN, AP}, 1}}
