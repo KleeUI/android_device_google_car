@@ -20,6 +20,7 @@
     <unavailable-feature name="android.hardware.camera.capability.raw" />
     <unavailable-feature name="android.hardware.camera.concurrent" />
     <unavailable-feature name="android.hardware.camera.level.full" />
+    <unavailable-feature name="android.hardware.context_hub" />
     <unavailable-feature name="android.hardware.fingerprint" />
     <unavailable-feature name="android.hardware.location.network" />
     <unavailable-feature name="android.hardware.sensor.stepcounter" />
