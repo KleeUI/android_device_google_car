@@ -15,6 +15,7 @@
 -->
 
 <permissions>
+    <unavailable-feature name="android.hardware.broadcastradio" />
     <unavailable-feature name="android.hardware.camera.capability.manual_post_processing" />
     <unavailable-feature name="android.hardware.camera.capability.manual_sensor" />
     <unavailable-feature name="android.hardware.camera.capability.raw" />
