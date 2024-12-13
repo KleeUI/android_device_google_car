@@ -22,6 +22,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/raven_car/aosp_raven_car.mk \
     $(LOCAL_DIR)/redfin_car/aosp_redfin_car.mk \
     $(LOCAL_DIR)/sunfish_car/aosp_sunfish_car.mk \
+    $(LOCAL_DIR)/husky_car/aosp_husky_car.mk \
     $(LOCAL_DIR)/tangorpro_car/aosp_tangorpro_car.mk
 
 
@@ -33,4 +34,5 @@ COMMON_LUNCH_CHOICES := \
     aosp_raven_car-trunk_staging-userdebug \
     aosp_redfin_car-trunk_staging-userdebug \
     aosp_sunfish_car-trunk_staging-userdebug \
+    aosp_husky_car-trunk_staging-userdebug \
     aosp_tangorpro_car-trunk_staging-userdebug

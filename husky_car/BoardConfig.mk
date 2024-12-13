@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Adjust the TARGET_SCREEN_DENSITY based on the target name
-ifeq (,$(findstring tangorpro_ui_portrait_car, $(TARGET_PRODUCT)))
-    TARGET_SCREEN_DENSITY := 280
-else
-    TARGET_SCREEN_DENSITY := 150
-endif
+# * TARGET_SCREEN_DENSITY is scaled down by 1.9x
+
+TARGET_SCREEN_DENSITY := 252
