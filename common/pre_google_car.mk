@@ -56,7 +56,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
 
 ifneq ($(PIXEL_2023_GEN),)
     PRODUCT_PACKAGES += \
-        android.hardware.broadcastradio \
+        android.hardware.broadcastradio-service.default \
         android.hardware.automotive.vehicle@V4-default-service
 else
     PRODUCT_PACKAGES += \
