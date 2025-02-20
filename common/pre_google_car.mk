@@ -39,18 +39,17 @@ GOOGLE_CAR_SERVICE_OVERLAY += CarServiceOverlayPhoneCarGoogle
 ifneq ($(DEVICE_IS_64BIT_ONLY),true)
     $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 endif
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
+$(call inherit-product, packages/services/Car/car_product/build/car_generic_system.mk)
 
 #
 # All components inherited here go to system_ext image
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
+$(call inherit-product, packages/services/Car/car_product/build/car_system_ext.mk)
 
 #
 # All components inherited here go to product image
 #
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
+$(call inherit-product, packages/services/Car/car_product/build/car_product.mk)
 
 # Auto modules
 
@@ -116,15 +115,17 @@ PRODUCT_COPY_FILES += \
 endif
 
 # broadcast radio feature
- PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.broadcastradio.xml:system/etc/permissions/android.hardware.broadcastradio.xml
 
 # Include EVS reference implementations
-ENABLE_EVS_SAMPLE := true
+ENABLE_EVS_SAMPLE ?= true
 
 #
 # All components inherited here go to vendor image
 #
 # TODO(b/136525499): move *_vendor.mk into the vendor makefile later
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+$(call inherit-product, packages/services/Car/car_product/build/car_vendor.mk)
+ifneq ($(TARGET_NO_TELEPHONY), true)
+    $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+endif
