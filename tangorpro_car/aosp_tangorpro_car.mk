@@ -15,7 +15,7 @@
 #
 
 DEVICE_IS_64BIT_ONLY := true
-
+PIXEL_2023_GEN := true
 
 PRODUCT_COPY_FILES += \
         device/google_car/tangorpro_car/unavailable_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavailable_features_tangorpro_car.xml
