@@ -21,7 +21,12 @@ $(call inherit-product, device/google/tangorpro/device-tangorpro.mk)
 #include device/google/gs101/uwb/uwb.mk
 
 PRODUCT_PRODUCT_PROPERTIES+= \
+    ro.oem.key1=AAE00GOOG00TANGORPRO
+
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_PRODUCT_PROPERTIES+= \
     ro.adb.secure=0
+endif
 
 PRODUCT_PACKAGES += \
     librs_jni
