@@ -26,6 +26,9 @@ $(call inherit-product, device/google_car/common/pre_google_car.mk)
 $(call inherit-product, device/google_car/tangorpro_car/device-tangorpro-car.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from tangorpro.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_NAME := aosp_tangorpro_car
 PRODUCT_DEVICE := tangorpro
 PRODUCT_MODEL := AOSP on Tangorpro
