@@ -57,8 +57,8 @@ ifneq ($(PIXEL_2023_GEN),true)
         android.hardware.automotive.vehicle@2.0-default-service
 else
     PRODUCT_PACKAGES += \
-        android.hardware.broadcastradio \
-        android.hardware.automotive.vehicle@V1-default-service
+        android.hardware.broadcastradio-service.default \
+        android.hardware.automotive.vehicle@V4-default-service
 endif
 
 # Additional selinux policy
