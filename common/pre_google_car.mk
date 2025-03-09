@@ -56,7 +56,7 @@ $(call inherit-product, packages/services/Car/car_product/build/car_product.mk)
 ifneq ($(PIXEL_2023_GEN),)
     PRODUCT_PACKAGES += \
         android.hardware.broadcastradio \
-        android.hardware.automotive.vehicle@V3-default-service
+        android.hardware.automotive.vehicle@V4-default-service
 else
     PRODUCT_PACKAGES += \
         android.hardware.broadcastradio@2.0-service \
