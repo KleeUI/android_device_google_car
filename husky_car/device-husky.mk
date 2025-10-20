@@ -481,7 +481,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
 # To resolve build failure, comment out this
 # Disable Settings large-screen optimization enabled by Window Extensions
-#PRODUCT_SYSTEM_PROPERTIES += \
+#PRODUCT_PRODUCT_PROPERTIES += \
 #    persist.settings.large_screen_opt.enabled=false
 
 # Keyboard height ratio and bottom padding in dp for portrait mode
@@ -546,3 +546,5 @@ PRODUCT_VENDOR_PROPERTIES += \
 ifeq ($(USE_GOOGLE_CARRIER_SETTINGS), true)
     $(call soong_config_set,carrier_settings,gs_common_paris_assets_path,paris_data_y25q2/latest/pixel2023)
 endif
+
+PRODUCT_SOONG_ONLY := $(RELEASE_SOONG_ONLY_HUSKY)
