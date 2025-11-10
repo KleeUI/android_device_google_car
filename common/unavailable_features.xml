@@ -30,7 +30,6 @@
     <unavailable-feature name="android.hardware.telephony.cdma" />
     <unavailable-feature name="android.hardware.telephony.data" />
     <unavailable-feature name="android.hardware.telephony.gsm" />
-    <unavailable-feature name="android.hardware.telephony.messaging" />
     <unavailable-feature name="android.hardware.telephony.radio.access" />
     <unavailable-feature name="android.hardware.telephony.subscription" />
     <unavailable-feature name="android.software.app_widgets" />
