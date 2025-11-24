@@ -36,6 +36,10 @@ PRODUCT_PACKAGES_DEBUG += \
 
 BOARD_SEPOLICY_DIRS += device/google_car/common/sepolicy
 
+# Add common vendor sepolicy for pixelsystemservice
+BOARD_VENDOR_SEPOLICY_DIRS += \
+    vendor/google_devices/gs-common/proprietary/pixelsystemservice/sepolicy/public
+
 # Sepolicy for occupant awareness system
 include packages/services/Car/car_product/occupant_awareness/OccupantAwareness.mk
 
