@@ -14,25 +14,27 @@
 # limitations under the License.
 #
 
-PRODUCT_PACKAGES_DEBUG := HideAppsTangorproCarExt
-PRODUCT_PACKAGE_OVERLAYS := device/google_car/tangorpro_car/overlay
-PRODUCT_COPY_FILES := device/google_car/tangorpro_car/unavailable_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavailable_features_tangorpro_car.xml
+DEVICE_IS_64BIT_ONLY := true
+PIXEL_2023_GEN := true
 
-include device/google_car/tangorpro_car/common_build_flags.mk
+PRODUCT_COPY_FILES += \
+        device/google_car/tangorpro_car/unavailable_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavailable_features_tangorpro_car.xml
+
+PRODUCT_PACKAGES_DEBUG += HideAppsTangorproCarExt
+
+PRODUCT_PACKAGE_OVERLAYS += device/google_car/tangorpro_car/overlay
 
 $(call inherit-product, device/google_car/common/pre_google_car.mk)
 $(call inherit-product, device/google_car/tangorpro_car/device-tangorpro-car.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
-ifneq (PORTRAIT_UI, true)
+
+# Scalable UI configuration
 PRODUCT_PACKAGES += CarSystemUIDewdLandAospRRO
 $(call inherit-product, packages/services/Car/car_product/dewd/car_dewd_landscape_common.mk)
-endif
 
 # Disable production validation checks to fix build error from tangorpro.scl
 PRODUCT_VALIDATION_CHECKS :=
 
-PRODUCT_CHARACTERISTICS := automotive
-PRODUCT_RESTRICT_VENDOR_FILES :=
 PRODUCT_NAME := aosp_tangorpro_car
 PRODUCT_DEVICE := tangorpro
 PRODUCT_MODEL := AOSP on Tangorpro
