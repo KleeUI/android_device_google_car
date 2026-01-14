@@ -108,6 +108,8 @@ PRODUCT_PACKAGES += \
 	Tag \
 	android.hardware.nfc-service.st
 
+PRODUCT_PACKAGES += preinstalled-packages-car-device-husky.xml
+
 # SecureElement
 PRODUCT_PACKAGES += \
 	android.hardware.secure_element-service.thales

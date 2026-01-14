@@ -1,0 +1,15 @@
+prebuilt_etc {
+    name: "preinstalled-packages-car-device-husky.xml",
+    src: "preinstalled-packages-car-device-husky.xml",
+    sub_dir: "sysconfig",
+    product_specific: true,
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "preinstalled-packages-car-device-panther.xml",
+    src: "preinstalled-packages-car-device-panther.xml",
+    sub_dir: "sysconfig",
+    product_specific: true,
+    filename_from_src: true,
+}
