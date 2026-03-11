@@ -115,6 +115,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.nfc-service.st \
 	NfcOverlayPanther
 
+PRODUCT_PACKAGES += preinstalled-packages-car-device-panther.xml
+
 # Shared Modem Platform
 SHARED_MODEM_PLATFORM_VENDOR := lassen
 
